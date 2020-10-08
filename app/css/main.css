@@ -13,10 +13,12 @@
 }
 .hero {
   height: 100vh;
+  overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-image: url(../img/hero_bg.jpg);
+  background-attachment: fixed;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -66,6 +68,15 @@
   right: 53px;
 }
 .header__menu:hover .header__menu__hamburger__line {
+  background-color: #466FFF;
+}
+.header__menu.black .header__menu__title {
+  color: black;
+}
+.header__menu.black .header__menu__hamburger__line {
+  background-color: black;
+}
+.header__menu.black:hover .header__menu__hamburger__line {
   background-color: #466FFF;
 }
 .header__menu__title {
